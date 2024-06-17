@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - maxencenoble
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - h2o64/slips
+  - maxencenoble/barrier-hamiltonian-monte-carlo
+  - maxencenoble/tree-diffusion-schrodinger-bridge
+  - maxencenoble/Differential-Privacy-for-Heterogeneous-Federated-Learning
