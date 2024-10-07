@@ -69,12 +69,21 @@
       items:
         - Awarded the Ecole Polytechnique Research Centre Prize in Applied Mathematics.
 
-- title: Academic Services
-  type: nested_list
+- title: Reviewing
+  type: time_table
   contents:
-    - title: Reviewer
-      items:
-        - AISTATS (2023), ICML (2023-2024), NeurIPS (2022-2024, top reviewer in 2023), TMLR (2023-2024), UAI (2023)
+    - year: 2022
+      description:
+        - NeurIPS
+    - year: 2023
+      description:
+        - AISTATS, ICML, NeurIPS (<b>Top Reviewer</b>), UAI, TMLR
+    - year: 2024
+      description:
+        - ICML (<b>Top Reviewer</b>), NeurIPS, TMLR
+    - year: 2025
+      description:
+        - ICLR
 
 - title: Other Interests
   type: list
