@@ -16,7 +16,7 @@
       year: 2022-now
       description:
         - Under the supervision of <a href="https://alain.perso.math.cnrs.fr/">Alain Durmus</a>.
-        - Generative modelling, sampling, Schrödinger Bridge, dynamic optimal transport, stochastic optimal control, diffusion models, Markov Chain Monte Carlo methods.
+        - Generative modeling, sampling, Schrödinger Bridge, dynamic optimal transport, stochastic optimal control, diffusion models, Markov Chain Monte Carlo methods.
         - title: Papers
           contents:
             - 1 ICLR workshop paper
@@ -24,12 +24,13 @@
             - 1 ICML paper
             - 1 COLT paper
             - 2 NeuRIPS papers
+            - 3 preprints
     - title: MRes. in Mathematics, Vision and Learning ("MVA")
       institution: École Normale Supérieure (ENS), Paris-Saclay, France
       year: 2021-2022
       description:
         - Distinctions with jury’s congratulations.
-        - Generative modelling, Bayesian Machine Learning,
+        - Generative modeling, Bayesian Machine Learning,
           Computational statistics, Optimal Transport, Probabilistic Graphical models.
     - title: MSc. in Applied Mathematics ("Ingénieur Polytechnicien")
       institution: École Polytechnique, Palaiseau, France
@@ -37,17 +38,17 @@
       description:
         - GPA 3.93/4, top 10% of all students.
         - Statistics, Optimization, Advanced Machine learning, Statistical
-          modelling, Monte Carlo simulations, Stochastic calculus.
+          modeling, Monte Carlo simulations, Stochastic calculus.
 
 - title: Experience
   type: time_table
   contents:
     - title: Research Scientist Intern
       institution: <a href="https://www.jasper.ai/">Jasper AI</a>, StationF, Paris, France
-      year: 2025-now
+      year: 2025
       description:
         - Affiliated to the Clipdrop team (previously part of Stability AI)
-        - Working on speeding up the inference of diffusion models for large-scale image restoration tasks.
+        - Worked on fast diffusion-based super-resolution.
     - title: Research Intern
       institution: <a href="https://csd.ens.psl.eu/">Center for Data Science</a>, ENS Ulm, Paris, France
       year: 2022

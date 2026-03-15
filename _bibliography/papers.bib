@@ -1,3 +1,33 @@
+@misc{grenioux2026diffusion,
+      title={Diffusion-based Annealed Boltzmann Generators : benefits, pitfalls and hopes}, 
+      author={Louis Grenioux* and Maxence Noble*},
+      year={2026},
+      abstract = {Sampling configurations at thermodynamic equilibrium is a central challenge in statistical physics. Boltzmann Generators (BGs) tackle it by combining a generative model with a Monte Carlo (MC) correction step to obtain asymptotically unbiased samples from an unnormalized target. Most current BGs use classic MC mechanisms such as importance sampling, which both require tractable likelihoods from the backbone model and scale poorly in high-dimensional, multi-modal targets. We study BGs built on annealed Monte Carlo (aMC), which is designed to overcome these limitations by bridging a simple reference to the target through a sequence of intermediate densities. Diffusion models (DMs) are powerful generative models and have already been incorporated into aMC-based recalibration schemes via the diffusion-induced density path, making them appealing backbones for aMC-BGs. We provide an empirical meta-analysis of DM-based aMC-BGs on controlled multi-modal Gaussian mixtures (varying mode separation, number of modes, and dimension), explicitly disentangling inference effects from learning effects by comparing (i) a perfectly learned DM and (ii) a DM trained from data. Even with a perfect DM, standard integrations using only first-order stochastic denoising kernels fail systematically, whereas second-order denoising kernels can substantially improve performance when covariance information is available. We further propose a deterministic aMC integration based on first-order transport maps derived from DMs, which outperforms the stochastic first-order variant at higher computational cost. Finally, in the learned-DM setting, all DM-aMC variants struggle to produce accurate BGs; we trace the main bottleneck to inaccurate DM log-density estimation.},
+      pdf={https://arxiv.org/pdf/2601.21026},
+      selected = {true},
+      abbr = {arXiv},
+}
+
+@misc{durmus2026sampling,
+      title={Sampling from multi-modal distributions on Riemannian manifolds with training-free stochastic interpolants},
+      author={Alain Durmus and Maxence Noble and Thibaut Pellerin},
+      year={2026},
+      abstract={In this paper, we propose a general methodology for sampling from un-normalized densities defined on Riemannian manifolds, with a particular focus on multi-modal targets that remain challenging for existing sampling methods. Inspired by the framework of diffusion models developed for generative modeling, we introduce a sampling algorithm based on the simulation of a non-equilibrium deterministic dynamics that transports an easy-to-sample noise distribution toward the target. At the marginal level, the induced density path follows a prescribed stochastic interpolant between the noise and target distributions, specifically constructed to respect the underlying Riemannian geometry. In contrast to related generative modeling approaches that rely on machine learning, our method is entirely training-free. It instead builds on iterative posterior sampling procedures using only standard Monte Carlo techniques, thereby extending recent diffusion-based sampling methodologies beyond the Euclidean setting. We complement our approach with a rigorous theoretical analysis and demonstrate its effectiveness on a range of multi-modal sampling problems, including high-dimensional and heavy-tailed examples.},
+      pdf={https://arxiv.org/pdf/2602.00641},
+      selected = {true},
+      abbr = {arXiv},
+}
+
+@misc{noble2026fast,
+      title={Fast, faithful and photorealistic diffusion-based image super-resolution with enhanced Flow Map models},
+      author={Maxence Noble and Gonzalo Iñaki Quintana and Benjamin Aubin and Clément Chadebec},
+      year={2026},
+      abstract = {Diffusion-based image super-resolution (SR) has recently attracted significant attention by leveraging the expressive power of large pre-trained text-to-image diffusion models (DMs). A central practical challenge is resolving the trade-off between reconstruction faithfulness and photorealism. To address inference efficiency, many recent works have explored knowledge distillation strategies specifically tailored to SR, enabling one-step diffusion-based approaches. However, these teacher-student formulations are inherently constrained by information compression, which can degrade perceptual cues such as lifelike textures and depth of field, even with high overall perceptual quality. In parallel, self-distillation DMs, known as Flow Map models, have emerged as a promising alternative for image generation tasks, enabling fast inference while preserving the expressivity and training stability of standard DMs. Building on these developments, we propose FlowMapSR, a novel diffusion-based framework for image super-resolution explicitly designed for efficient inference. Beyond adapting Flow Map models to SR, we introduce two complementary enhancements: (i) positive-negative prompting guidance, based on a generalization of classifier free-guidance paradigm to Flow Map models, and (ii) adversarial fine-tuning using Low-Rank Adaptation (LoRA). Among the considered Flow Map formulations (Eulerian, Lagrangian, and Shortcut), we find that the Shortcut variant consistently achieves the best performance when combined with these enhancements. Extensive experiments show that FlowMapSR achieves a better balance between reconstruction faithfulness and photorealism than recent state-of-the-art methods for both x4 and x8 upscaling, while maintaining competitive inference time. Notably, a single model is used for both upscaling factors, without any scale-specific conditioning or degradation-guided mechanisms.},
+      pdf = {https://arxiv.org/pdf/2601.16660},
+      selected = {true},
+      abbr = {arXiv},
+}
+
 @misc{grenioux2025improving,
     title = {Improving the evaluation of samplers on multi-modal targets},
     author = {Louis Grenioux* and Maxence Noble* and Marylou Gabrié},
