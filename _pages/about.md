@@ -17,7 +17,7 @@ announcements:
   limit: 4 # leave blank to include all the news in the `_news` folder
 
 ---
-**Postdoctoral Researcher** at [Capital Fund Management (CFM)](https://www.cfm.com/) ML Lab<sup>†</sup> in Paris, working with [Eric Vanden-Eijnden](https://scholar.google.com/citations?user=A5Gx65gAAAAJ&hl=en).
+**Postdoctoral Researcher** at [Capital Fund Management (CFM)](https://www.cfm.com/) ML Lab<sup>†</sup> in Paris since September 2026, working with [Eric Vanden-Eijnden](https://scholar.google.com/citations?user=A5Gx65gAAAAJ&hl=en).
 
 **Research interests**: 
 - Generative models (diffusion/flow models, flow maps)

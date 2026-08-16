@@ -1,112 +1,116 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Maxence Noble
-    - name: Languages
-      value: French, English, German, Italian
-    - name: Contact
-      value: <span style="font-family:'Lucida Console', monospace">maxence.noble at gmail dot com</span>
+cv:
+    name: Maxence Noble
+    email: maxence.noble at gmail dot com
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Postdoctoral Researcher
-      institution: <a href="https://www.cfm.com/">CFM ML Lab</a>, Paris, France
-      year: 2026-now
-      description:
-        - Working with <a href="https://scholar.google.com/citations?user=A5Gx65gAAAAJ&hl=fr&oi=ao">Eric Vanden-Eijnden</a> on fundamental principles and applications of generative models and sampling methods.
-    - title: Research Scientist Intern
-      institution: <a href="https://www.jasper.ai/">Jasper AI</a>, StationF, Paris, France
-      year: 2025
-      description:
-        - Affiliated to the Clipdrop team (previously part of Stability AI).
-        - Worked on fast diffusion-based super-resolution.
-    - title: Graduate Research Assistant
-      institution: <a href="https://csd.ens.psl.eu/">Center for Data Science</a>, ENS Ulm, Paris, France
-      year: 2022
-      description:
-        - Under the supervision of <a href="https://vdeborto.github.io/">Valentin de Bortoli</a>.
-        - Worked on sampling algorithms for constrained spaces with self-concordant barriers.
-    - title: Graduate Research Assistant
-      institution: <a href="https://cmap.ip-paris.fr/">CMAP</a>, École Polytechnique, Palaiseau & INRIA Lille, France
-      year: 2021
-      description:
-        - Under the supervision of <a href="http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/">Aymeric Dieuleveut</a> and <a href="http://researchers.lille.inria.fr/abellet/">Aurélien Bellet</a>.
-        - Worked on federated learning comprising concerns about privacy and data heterogeneity.
+    sections:
+      Experience:
+        - company: '<a href="https://www.cfm.com/">CFM ML Lab</a>'
+          position: Postdoctoral Researcher
+          location: Paris, France
+          start_date: Sept. 2026
+          end_date: now
+          highlights:
+            - 'Working with <a href="https://scholar.google.com/citations?user=A5Gx65gAAAAJ&hl=fr&oi=ao">Eric Vanden-Eijnden</a> on fundamental principles and applications of generative models and sampling methods.'
 
-    - title: Data Scientist Intern
-      institution: <a href="https://www.deepki.com/">Deepki</a>, Paris, France
-      year: 2020
-      description:
-        - Worked with the R&D team on improving data completeness in the collection and use of energy consumption invoices (scraping & parsing).
+        - company: '<a href="https://www.jasper.ai/">Jasper AI</a>'
+          position: Research Scientist Intern
+          location: Paris, France
+          date: March–Sept. 2025
+          highlights:
+            - Affiliated to the Clipdrop team (previously part of Stability AI).
+            - Worked on fast diffusion-based super-resolution.
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD in Machine Learning
-      institution:  <a href="https://cmap.ip-paris.fr/">CMAP</a>, École Polytechnique, Palaiseau, France
-      year: 2026-2026
-      description:
-        - Under the supervision of <a href="https://alain.perso.math.cnrs.fr/">Alain Durmus</a>.
-        - "Sampling and Transport with Score-based Diffusion models : Opportunities and Methodological Advances"
-        - title: 9 papers
-          contents:
-            - 1 COLT paper
-            - 1 ICLR workshop paper
-            - 1 ICLR paper
-            - 1 ICML paper
-            - 2 NeuRIPS papers
-            - 1 TMLR paper
-            - 2 preprints
-    - title: M.Res. in Mathematics, Vision and Learning ("MVA")
-      institution: École Normale Supérieure (ENS), Paris-Saclay, France
-      year: 2021-2022
-      description:
-        - Distinctions with jury’s congratulations.
-        - Generative modeling, Bayesian Machine Learning,
-          Computational statistics, Optimal Transport, Probabilistic Graphical models.
-    - title: M.Sc. in Applied Mathematics ("Ingénieur Polytechnicien")
-      institution: École Polytechnique, Palaiseau, France
-      year: 2018 - 2021
-      description:
-        - GPA 3.93/4, top 10% of all students.
-        - Statistics, Optimization, Advanced Machine learning, Statistical
-          modeling, Monte Carlo simulations, Stochastic calculus.
+        - company: '<a href="https://csd.ens.psl.eu/">Center for Data Science</a>, ENS Ulm'
+          position: Graduate Research Assistant
+          location: Paris, France
+          date: March–Sept. 2022
+          highlights:
+            - 'Under the supervision of <a href="https://vdeborto.github.io/">Valentin de Bortoli</a>.'
+            - Worked on sampling algorithms for constrained spaces with self-concordant barriers.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 2022
-      items:
-        - Awarded a selective PhD scholarship by Ecole Polytechnique.
-    - year: 2021
-      items:
-        - Awarded the Ecole Polytechnique Research Centre Prize in Applied Mathematics.
+        - company: '<a href="https://cmap.ip-paris.fr/">CMAP</a>, École Polytechnique & INRIA Lille'
+          position: Graduate Research Assistant
+          location: Palaiseau/Lille, France
+          date: March–Sept. 2021
+          highlights:
+            - 'Under the supervision of <a href="http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/">Aymeric Dieuleveut</a> and <a href="http://researchers.lille.inria.fr/abellet/">Aurélien Bellet</a>.'
+            - Worked on federated learning comprising concerns about privacy and data heterogeneity.
 
-- title: Reviewing
-  type: time_table
-  contents:
-    - year: 2026
-      description:
-        - NeurIPS, PriGM @NeurIPS, TMLR
-    - year: 2025
-      description:
-        - ICLR, FPI @ICLR, NeurIPS
-    - year: 2024
-      description:
-        - ICML (<b>Top Reviewer</b>), NeurIPS, TMLR
-    - year: 2023
-      description:
-        - AISTATS, SPIGM @ICML, NeurIPS (<b>Top Reviewer</b>), UAI, TMLR
-    - year: 2022
-      description:
-        - NeurIPS
+        - company: '<a href="https://www.deepki.com/">Deepki</a>'
+          position: Data Scientist Intern
+          location: Paris, France
+          date: June–Aug. 2020
+          highlights:
+            - "Worked with the R&D team on improving data completeness in the collection and use of energy consumption invoices (scraping & parsing)."
 
+      Education:
+        - institution: '<a href="https://cmap.ip-paris.fr/">CMAP</a>, École Polytechnique'
+          studyType: PhD in Machine Learning
+          location: Palaiseau, France
+          start_date: 2022
+          end_date: 2026
+          highlights:
+            - 'Under the supervision of <a href="https://alain.perso.math.cnrs.fr/">Alain Durmus</a>.'
+            - "Sampling and Transport with Score-based Diffusion models : Opportunities and Methodological Advances."
+            - "9 papers: 1 COLT paper, 1 ICLR workshop paper, 1 ICLR paper, 1 ICML paper, 2 NeurIPS papers, 1 TMLR paper, 2 preprints."
 
+        - institution: École Normale Supérieure (ENS), Paris-Saclay
+          studyType: M.Res. in Mathematics, Vision and Learning ("MVA")
+          location: Gif-sur-Yvette, France
+          start_date: 2021
+          end_date: 2022
+          highlights:
+            - Distinctions with jury’s congratulations.
+            - Generative modeling, Bayesian Machine Learning, Computational statistics, Optimal Transport, Probabilistic Graphical models.
 
+        - institution: École Polytechnique
+          studyType: M.Sc. in Applied Mathematics ("Ingénieur Polytechnicien")
+          location: Palaiseau, France
+          start_date: 2018
+          end_date: 2021
+          highlights:
+            - GPA 3.93/4, top 10% of all students.
+            - Statistics, Optimization, Advanced Machine learning, Statistical modeling, Monte Carlo simulations, Stochastic calculus.
 
-- title: Other Interests
-  type: list
-  contents:
-    - Hyrox, Calisthenics, Swimming, Swim-run, Cooking, Cinema.
+      Honors and Awards:
+        - title: Awarded a selective PhD scholarship by Ecole Polytechnique.
+          date: 2022
+
+        - title: Awarded the Ecole Polytechnique Research Centre Prize in Applied Mathematics.
+          date: 2021
+
+      Reviewing:
+        - label: "2026"
+          details: NeurIPS, PriGM @NeurIPS, TMLR
+
+        - label: "2025"
+          details: ICLR, FPI @ICLR, NeurIPS
+
+        - label: "2024"
+          details: ICML (<b>Top Reviewer</b>), NeurIPS, TMLR
+
+        - label: "2023"
+          details: AISTATS, SPIGM @ICML, NeurIPS (<b>Top Reviewer</b>), UAI, TMLR
+
+        - label: "2022"
+          details: NeurIPS
+
+      Languages:
+        - name: French
+          summary: Native
+
+        - name: English
+          summary: Proficient
+
+        - name: German
+          summary: Intermediate
+
+        - name: Italian
+          summary: Sto imparando 🇮🇹
+
+      Other Interests:
+        - bullet: "**Sports:** Following the motto *Mens sana in corpore sano*, I regularly practice several sports, especially Hyrox (my personal favorite at the moment), as well as calisthenics and swimming (my chilhood sports), with the ambition of becoming one day a hybrid athlete. More recently, I have also taken up Swimrun, and I have to say: it is quite magical."
+
+        - bullet: "**Food:** Eating is one of my great passions, and fortunately I also love cooking. If you want to make me happy, take me somewhere where the food really tastes good!"
+
+        - bullet: "**Cinema:** I usually go to the cinema about twice a week to escape from my maths addiction, this is quite efficient. You can find my Letterboxd profile [here](https://letterboxd.com/fitchmax98/)."
