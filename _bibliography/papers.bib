@@ -3,18 +3,19 @@
       author={Maxence Noble and Marie Scheid and Yazid Janati and Eric Moulines and Alain Durmus},
       year={2026},
       abbr = {arXiv},
+      note = {In review},
       abstract = {Over the past few years, diffusion-based Schrödinger bridge models have been proposed to approximate optimal transport dynamics between two prescribed boundary distributions, with successful applications to generative modeling. More precisely, these methods aim to estimate a path measure whose initial and terminal marginals match the two boundary distributions, while minimizing the Kullback-Leibler divergence with respect to a reference Markov process. In this work, we consider the generalized Schrödinger bridge problem, in which the reference process is a twisted Brownian motion, that is, a Feynman-Kac transform of a Brownian motion induced by a time-dependent differentiable potential. Building on the Iterative Markovian Fitting (IMF) paradigm, and in particular on its special case Diffusion Schrödinger Bridge Matching (DSBM), which corresponds to the zero potential case, we introduce Twisted Schrödinger Bridge Matching (TSBM), a diffusion-based method designed to handle both continuous- and discrete-time potentials. Unlike previous approaches, TSBM provides a rigorous extension of the IMF scheme to the generalized Schrödinger bridge problem. This derivation leads to a new bridge-matching loss that depends explicitly on the gradient of the potential and recovers the DSBM objective when the potential vanishes, yielding improved performance. We further introduce trajectory-based variance-reduction techniques that substantially stabilize optimization and may be useful beyond the present setting. Finally, we empirically demonstrate the benefits of TSBM for trajectory inference across increasingly high-dimensional settings, including crowd navigation and single-cell data.},
       pdf={https://arxiv.org/pdf/2607.16987},
       selected = {true},
       code = {https://github.com/maxencenoble/twisted-sb-matching},
 }
 
-@misc{grenioux2026diffusion,
+@article{grenioux2026diffusion,
       title={Diffusion-based Annealed Boltzmann Generators : benefits, pitfalls and hopes}, 
       author={Louis Grenioux* and Maxence Noble*},
       year={2026},
       abbr = {TMLR},
-      journal = {Transactions on Machine Learning Research (TMLR)},
+      journal = {Transactions on Machine Learning Research},
       abstract = {Sampling configurations at thermodynamic equilibrium is a central challenge in statistical physics. Boltzmann Generators (BGs) tackle it by combining a generative model with a Monte Carlo (MC) correction step to obtain asymptotically unbiased samples from an unnormalized target. Most current BGs use classic MC mechanisms such as importance sampling, which both require tractable likelihoods from the backbone model and scale poorly in high-dimensional, multi-modal targets. We study BGs built on annealed Monte Carlo (aMC), which is designed to overcome these limitations by bridging a simple reference to the target through a sequence of intermediate densities. Diffusion models (DMs) are powerful generative models and have already been incorporated into aMC-based recalibration schemes via the diffusion-induced density path, making them appealing backbones for aMC-BGs. We provide an empirical meta-analysis of DM-based aMC-BGs on controlled multi-modal Gaussian mixtures (varying mode separation, number of modes, and dimension), explicitly disentangling inference effects from learning effects by comparing (i) a perfectly learned DM and (ii) a DM trained from data. Even with a perfect DM, standard integrations using only first-order stochastic denoising kernels fail systematically, whereas second-order denoising kernels can substantially improve performance when covariance information is available. We further propose a deterministic aMC integration based on first-order transport maps derived from DMs, which outperforms the stochastic first-order variant at higher computational cost. Finally, in the learned-DM setting, all DM-aMC variants struggle to produce accurate BGs; we trace the main bottleneck to inaccurate DM log-density estimation.},
       pdf={https://openreview.net/pdf?id=la4FDaeIbw},
       selected = {true},
@@ -25,6 +26,7 @@
       title={Sampling from multi-modal distributions on Riemannian manifolds with training-free stochastic interpolants},
       author={Alain Durmus and Maxence Noble and Thibaut Pellerin},
       year={2026},
+      note = {In review},
       abstract={In this paper, we propose a general methodology for sampling from un-normalized densities defined on Riemannian manifolds, with a particular focus on multi-modal targets that remain challenging for existing sampling methods. Inspired by the framework of diffusion models developed for generative modeling, we introduce a sampling algorithm based on the simulation of a non-equilibrium deterministic dynamics that transports an easy-to-sample noise distribution toward the target. At the marginal level, the induced density path follows a prescribed stochastic interpolant between the noise and target distributions, specifically constructed to respect the underlying Riemannian geometry. In contrast to related generative modeling approaches that rely on machine learning, our method is entirely training-free. It instead builds on iterative posterior sampling procedures using only standard Monte Carlo techniques, thereby extending recent diffusion-based sampling methodologies beyond the Euclidean setting. We complement our approach with a rigorous theoretical analysis and demonstrate its effectiveness on a range of multi-modal sampling problems, including high-dimensional and heavy-tailed examples.},
       pdf={https://arxiv.org/pdf/2602.00641},
       selected = {false},
@@ -35,28 +37,31 @@
       title={Fast, faithful and photorealistic diffusion-based image super-resolution with enhanced Flow Map models},
       author={Maxence Noble and Gonzalo Iñaki Quintana and Benjamin Aubin and Clément Chadebec},
       year={2026},
+      note = {Technical report},
       abstract = {Diffusion-based image super-resolution (SR) has recently attracted significant attention by leveraging the expressive power of large pre-trained text-to-image diffusion models (DMs). A central practical challenge is resolving the trade-off between reconstruction faithfulness and photorealism. To address inference efficiency, many recent works have explored knowledge distillation strategies specifically tailored to SR, enabling one-step diffusion-based approaches. However, these teacher-student formulations are inherently constrained by information compression, which can degrade perceptual cues such as lifelike textures and depth of field, even with high overall perceptual quality. In parallel, self-distillation DMs, known as Flow Map models, have emerged as a promising alternative for image generation tasks, enabling fast inference while preserving the expressivity and training stability of standard DMs. Building on these developments, we propose FlowMapSR, a novel diffusion-based framework for image super-resolution explicitly designed for efficient inference. Beyond adapting Flow Map models to SR, we introduce two complementary enhancements: (i) positive-negative prompting guidance, based on a generalization of classifier free-guidance paradigm to Flow Map models, and (ii) adversarial fine-tuning using Low-Rank Adaptation (LoRA). Among the considered Flow Map formulations (Eulerian, Lagrangian, and Shortcut), we find that the Shortcut variant consistently achieves the best performance when combined with these enhancements. Extensive experiments show that FlowMapSR achieves a better balance between reconstruction faithfulness and photorealism than recent state-of-the-art methods for both x4 and x8 upscaling, while maintaining competitive inference time. Notably, a single model is used for both upscaling factors, without any scale-specific conditioning or degradation-guided mechanisms.},
       pdf = {https://arxiv.org/pdf/2601.16660},
       selected = {true},
       abbr = {arXiv},
 }
 
-@misc{grenioux2025improving,
+@inproceedings{grenioux2025improving,
     title = {Improving the evaluation of samplers on multi-modal targets},
     author = {Louis Grenioux* and Maxence Noble* and Marylou Gabrié},
     year = 2025,
     abbr = {FPI @ICLR},
+    booktitle = {Frontiers in Probabilistic Inference: Sampling Meets Learning (ICLR workshop)},
     abstract = {Addressing multi-modality constitutes one of the major challenges of sampling. In this reflection paper, we advocate for a more systematic evaluation of samplers towards two sources of difficulty that are mode separation and dimension. For this, we propose a synthetic experimental setting that we illustrate on a selection of samplers, focusing on the challenging criterion of recovery of the mode relative importance. These evaluations are crucial to diagnose the potential of samplers to handle multi-modality and therefore to drive progress in the field.},
     pdf = {https://arxiv.org/pdf/2504.08916},
     selected = {true},
     code = {https://github.com/h2o64/dabg},
 }
 
-@misc{noble2024learned,
+@inproceedings{noble2024learned,
     title = {Learned Reference Diffusion-based Sampling for multi-modal distributions},
     author = {Maxence Noble* and Louis Grenioux* and Marylou Gabrié and Alain Durmus},
     year = 2025,
     abbr = {ICLR},
+    booktitle = {International Conference on Representation Learning},
     abstract = {Over the past few years, several approaches utilizing score-based diffusion have been proposed to sample from probability distributions, that is without having access to exact samples and relying solely on evaluations of unnormalized densities. The resulting samplers approximate the time-reversal of a noising diffusion process, bridging the target distribution to an easy-to-sample base distribution. In practice, the performance of these methods heavily depends on key hyperparameters that require ground truth samples to be accurately tuned. Our work aims to highlight and address this fundamental issue, focusing in particular on multi-modal distributions, which pose significant challenges for existing sampling methods. Building on existing approaches, we introduce Learned Reference-based Diffusion Sampler (LRDS), a methodology specifically designed to leverage prior knowledge on the location of the target modes in order to bypass the obstacle of hyperparameter tuning. LRDS proceeds in two steps by (i) learning a reference diffusion model on samples located in high-density space regions and tailored for multimodality, and (ii) using this reference model to foster the training of a diffusion-based sampler. We experimentally demonstrate that LRDS best exploits prior knowledge on the target distribution compared to competing algorithms on a variety of challenging distributions.},
     pdf = {https://arxiv.org/pdf/2410.19449},
     selected = {true},
@@ -64,11 +69,11 @@
     slides = {https://docs.google.com/presentation/d/1zDG-kOas7sczW7oW8b_ZOpkW0IsppTe3TlVjtrZez8I/edit?usp=sharing},
 }
 
-@misc{grenioux2024stochastic,
+@inproceedings{grenioux2024stochastic,
     title = {Stochastic Localization via Iterative Posterior Sampling},
     author = {Louis Grenioux* and Maxence Noble* and Marylou Gabrié and Alain Durmus},
     year = 2024,
-    journal = {International Machine Learning Society (ICML)},
+    booktitle = {International Conference on Machine Learning},
     abbr = {ICML},
     abstract = {Building upon score-based learning, new interest in stochastic localization techniques has recently emerged. In these models, one seeks to noise a sample from the data distribution through a stochastic process, called observation process, and progressively learns a denoiser associated to this dynamics. Apart from specific applications, the use of stochastic localization for the problem of sampling from an unnormalized target density has not been explored extensively. This work contributes to fill this gap. We consider a general stochastic localization framework and introduce an explicit class of observation processes, associated with flexible denoising schedules. We provide a complete methodology, Stochastic Localization via Iterative Posterior Sampling (SLIPS), to obtain approximate samples of these dynamics, and as a by-product, samples from the target distribution. Our scheme is based on a Markov chain Monte Carlo estimation of the denoiser and comes with detailed practical guidelines. We illustrate the benefits and applicability of SLIPS on several benchmarks, including Gaussian mixtures in increasing dimensions, Bayesian logistic regression and a high-dimensional field system from statistical-mechanics.},
     pdf = {https://arxiv.org/pdf/2402.10758},
@@ -79,11 +84,11 @@
     selected = {true}
 }
 
-@misc{noble2024tree,
+@inproceedings{noble2024tree,
     title = {Tree-based Diffusion Schr{\"o}dinger Bridge with Applications to Wasserstein Barycenters},
     author = {Maxence Noble and Valentin De Bortoli and Arnaud Doucet and Alain Durmus},
     year = 2023,
-    journal = {Conference on Neural Information Processing Systems (NeurIPS)},
+    booktitle = {Annual Conference on Neural Information Processing Systems},
     abbr = {NeurIPS},
     abstract = {Multi-marginal Optimal Transport (mOT), a generalization of OT, aims at minimizing the integral of a cost function with respect to a distribution with some prescribed marginals. In this paper, we consider an entropic version of mOT with a tree-structured quadratic cost, i.e., a function that can be written as a sum of pairwise cost functions between the nodes of a tree. To address this problem, we develop Tree-based Diffusion Schrödinger Bridge (TreeDSB), an extension of the Diffusion Schrödinger Bridge (DSB) algorithm. TreeDSB corresponds to a dynamic and continuous state-space counterpart of the multimarginal Sinkhorn algorithm. A notable use case of our methodology is to compute Wasserstein barycenters which can be recast as the solution of a mOT problem on a star-shaped tree. We demonstrate that our methodology can be applied in high-dimensional settings such as image interpolation and Bayesian fusion.},
     pdf = {https://arxiv.org/pdf/2305.16557},
@@ -94,22 +99,22 @@
     selected = {false}
 }
 
-@misc{greco2023non,
+@inproceedings{greco2023non,
     title = {Non-asymptotic convergence bounds for Sinkhorn iterates and their gradients: a coupling approach},
     author = {Giacomo Greco and Maxence Noble and Giovanni Conforti and Alain Durmus},
     year = 2023,
-    journal = {Annual Conference on Learning Theory (COLT)},
+    booktitle = {Annual Conference on Learning Theory},
     abbr = {COLT},
     abstract = {Computational optimal transport (OT) has recently emerged as a powerful framework with applications in various fields. In this paper we focus on a relaxation of the original OT problem, the entropic OT problem, which allows to implement efficient and practical algorithmic solutions, even in high dimensional settings. This formulation, also known as the Schrödinger Bridge problem, notably connects with Stochastic Optimal Control (SOC) and can be solved with the popular Sinkhorn algorithm. In the case of discrete-state spaces, this algorithm is known to have exponential convergence; however, achieving a similar rate of convergence in a more general setting is still an active area of research. In this work, we analyze the convergence of the Sinkhorn algorithm for probability measures defined on the d-dimensional torus 𝕋dL, that admit densities with respect to the Haar measure of 𝕋dL. In particular, we prove pointwise exponential convergence of Sinkhorn iterates and their gradient. Our proof relies on the connection between these iterates and the evolution along the Hamilton-Jacobi-Bellman equations of value functions obtained from SOC-problems. Our approach is novel in that it is purely probabilistic and relies on coupling by reflection techniques for controlled diffusions on the torus.},
     pdf = {https://arxiv.org/pdf/2304.06549},
     selected = {false}
 }
 
-@misc{noble2024unbiased,
+@inproceedings{noble2024unbiased,
     title = {Unbiased constrained sampling with Self-Concordant Barrier Hamiltonian Monte Carlo},
     author = {Maxence Noble and Valentin De Bortoli and Alain Durmus},
     year = 2023,
-    journal = {Conference on Neural Information Processing Systems (NeurIPS)},
+    booktitle = {Annual Conference on Neural Information Processing Systems},
     abbr = {NeurIPS},
     abstract = {In this paper, we propose Barrier Hamiltonian Monte Carlo (BHMC), a version of the HMC algorithm which aims at sampling from a Gibbs distribution π on a manifold M, endowed with a Hessian metric 𝔤 derived from a self-concordant barrier. Our method relies on Hamiltonian dynamics which comprises 𝔤. Therefore, it incorporates the constraints defining M and is able to exploit its underlying geometry. However, the corresponding Hamiltonian dynamics is defined via non separable Ordinary Differential Equations (ODEs) in contrast to the Euclidean case. It implies unavoidable bias in existing generalization of HMC to Riemannian manifolds. In this paper, we propose a new filter step, called "involution checking step", to address this problem. This step is implemented in two versions of BHMC, coined continuous BHMC (c-BHMC) and numerical BHMC (n-BHMC) respectively. Our main results establish that these two new algorithms generate reversible Markov chains with respect to π and do not suffer from any bias in comparison to previous implementations. Our conclusions are supported by numerical experiments where we consider target distributions defined on polytopes.},
     pdf = {https://arxiv.org/pdf/2210.11925},
@@ -118,11 +123,11 @@
     selected = {false}
 }
 
-@misc{noble2022differentially,
+@inproceedings{noble2022differentially,
     title = {Differentially private Federated Learning on heterogeneous data},
     author = {Maxence Noble and Aurélien Bellet and Aymeric Dieuleveut},
     year = 2022,
-    journal = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
+    booktitle = {International Conference on Artificial Intelligence and Statistics},
     abbr = {AISTATS},
     abstract = {Federated Learning (FL) is a paradigm for large-scale distributed learning which faces two key challenges: (i) efficient training from highly heterogeneous user data, and (ii) protecting the privacy of participating users. In this work, we propose a novel FL approach (DP-SCAFFOLD) to tackle these two challenges together by incorporating Differential Privacy (DP) constraints into the popular SCAFFOLD algorithm. We focus on the challenging setting where users communicate with a "honest-but-curious" server without any trusted intermediary, which requires to ensure privacy not only towards a third-party with access to the final model but also towards the server who observes all user communications. Using advanced results from DP theory, we establish the convergence of our algorithm for convex and non-convex objectives. Our analysis clearly highlights the privacy-utility trade-off under data heterogeneity, and demonstrates the superiority of DP-SCAFFOLD over the state-of-the-art algorithm DP-FedAvg when the number of local updates and the level of heterogeneity grow. Our numerical results confirm our analysis and show that DP-SCAFFOLD provides significant gains in practice.},
     pdf = {https://arxiv.org/pdf/2111.09278},
