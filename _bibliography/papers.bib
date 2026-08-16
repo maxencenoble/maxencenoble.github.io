@@ -1,11 +1,24 @@
+@misc{noble2026twisted,
+      title={Twisted Schrödinger Bridge Matching},
+      author={Maxence Noble and Marie Scheid and Yazid Janati and Eric Moulines and Alain Durmus},
+      year={2026},
+      abbr = {arXiv},
+      abstract = {Over the past few years, diffusion-based Schrödinger bridge models have been proposed to approximate optimal transport dynamics between two prescribed boundary distributions, with successful applications to generative modeling. More precisely, these methods aim to estimate a path measure whose initial and terminal marginals match the two boundary distributions, while minimizing the Kullback-Leibler divergence with respect to a reference Markov process. In this work, we consider the generalized Schrödinger bridge problem, in which the reference process is a twisted Brownian motion, that is, a Feynman-Kac transform of a Brownian motion induced by a time-dependent differentiable potential. Building on the Iterative Markovian Fitting (IMF) paradigm, and in particular on its special case Diffusion Schrödinger Bridge Matching (DSBM), which corresponds to the zero potential case, we introduce Twisted Schrödinger Bridge Matching (TSBM), a diffusion-based method designed to handle both continuous- and discrete-time potentials. Unlike previous approaches, TSBM provides a rigorous extension of the IMF scheme to the generalized Schrödinger bridge problem. This derivation leads to a new bridge-matching loss that depends explicitly on the gradient of the potential and recovers the DSBM objective when the potential vanishes, yielding improved performance. We further introduce trajectory-based variance-reduction techniques that substantially stabilize optimization and may be useful beyond the present setting. Finally, we empirically demonstrate the benefits of TSBM for trajectory inference across increasingly high-dimensional settings, including crowd navigation and single-cell data.},
+      pdf={https://arxiv.org/pdf/2607.16987},
+      selected = {true},
+      code = {https://github.com/maxencenoble/twisted-sb-matching},
+}
+
 @misc{grenioux2026diffusion,
       title={Diffusion-based Annealed Boltzmann Generators : benefits, pitfalls and hopes}, 
       author={Louis Grenioux* and Maxence Noble*},
       year={2026},
+      abbr = {TMLR},
+      journal = {Transactions on Machine Learning Research (TMLR)},
       abstract = {Sampling configurations at thermodynamic equilibrium is a central challenge in statistical physics. Boltzmann Generators (BGs) tackle it by combining a generative model with a Monte Carlo (MC) correction step to obtain asymptotically unbiased samples from an unnormalized target. Most current BGs use classic MC mechanisms such as importance sampling, which both require tractable likelihoods from the backbone model and scale poorly in high-dimensional, multi-modal targets. We study BGs built on annealed Monte Carlo (aMC), which is designed to overcome these limitations by bridging a simple reference to the target through a sequence of intermediate densities. Diffusion models (DMs) are powerful generative models and have already been incorporated into aMC-based recalibration schemes via the diffusion-induced density path, making them appealing backbones for aMC-BGs. We provide an empirical meta-analysis of DM-based aMC-BGs on controlled multi-modal Gaussian mixtures (varying mode separation, number of modes, and dimension), explicitly disentangling inference effects from learning effects by comparing (i) a perfectly learned DM and (ii) a DM trained from data. Even with a perfect DM, standard integrations using only first-order stochastic denoising kernels fail systematically, whereas second-order denoising kernels can substantially improve performance when covariance information is available. We further propose a deterministic aMC integration based on first-order transport maps derived from DMs, which outperforms the stochastic first-order variant at higher computational cost. Finally, in the learned-DM setting, all DM-aMC variants struggle to produce accurate BGs; we trace the main bottleneck to inaccurate DM log-density estimation.},
-      pdf={https://arxiv.org/pdf/2601.21026},
+      pdf={https://openreview.net/pdf?id=la4FDaeIbw},
       selected = {true},
-      abbr = {arXiv},
+      code = {https://github.com/h2o64/dabg},
 }
 
 @misc{durmus2026sampling,
@@ -14,7 +27,7 @@
       year={2026},
       abstract={In this paper, we propose a general methodology for sampling from un-normalized densities defined on Riemannian manifolds, with a particular focus on multi-modal targets that remain challenging for existing sampling methods. Inspired by the framework of diffusion models developed for generative modeling, we introduce a sampling algorithm based on the simulation of a non-equilibrium deterministic dynamics that transports an easy-to-sample noise distribution toward the target. At the marginal level, the induced density path follows a prescribed stochastic interpolant between the noise and target distributions, specifically constructed to respect the underlying Riemannian geometry. In contrast to related generative modeling approaches that rely on machine learning, our method is entirely training-free. It instead builds on iterative posterior sampling procedures using only standard Monte Carlo techniques, thereby extending recent diffusion-based sampling methodologies beyond the Euclidean setting. We complement our approach with a rigorous theoretical analysis and demonstrate its effectiveness on a range of multi-modal sampling problems, including high-dimensional and heavy-tailed examples.},
       pdf={https://arxiv.org/pdf/2602.00641},
-      selected = {true},
+      selected = {false},
       abbr = {arXiv},
 }
 
@@ -36,6 +49,7 @@
     abstract = {Addressing multi-modality constitutes one of the major challenges of sampling. In this reflection paper, we advocate for a more systematic evaluation of samplers towards two sources of difficulty that are mode separation and dimension. For this, we propose a synthetic experimental setting that we illustrate on a selection of samplers, focusing on the challenging criterion of recovery of the mode relative importance. These evaluations are crucial to diagnose the potential of samplers to handle multi-modality and therefore to drive progress in the field.},
     pdf = {https://arxiv.org/pdf/2504.08916},
     selected = {true},
+    code = {https://github.com/h2o64/dabg},
 }
 
 @misc{noble2024learned,
@@ -77,7 +91,7 @@
     slides = {TreeDSB_slides.pdf},
     award = {This paper has been selected as a spotlight-designated paper at the conference. Top 3.6% acceptance rate.},
     award_name = {Spotlight},
-    selected = {true}
+    selected = {false}
 }
 
 @misc{greco2023non,
@@ -101,7 +115,7 @@
     pdf = {https://arxiv.org/pdf/2210.11925},
     code = {https://github.com/maxencenoble/barrier-hamiltonian-monte-carlo},
     slides = {BHMC_slides.pdf},
-    selected = {true}
+    selected = {false}
 }
 
 @misc{noble2022differentially,

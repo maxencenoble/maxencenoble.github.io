@@ -4,59 +4,32 @@
     - name: Full Name
       value: Maxence Noble
     - name: Languages
-      value: French, English, German
+      value: French, English, German, Italian
     - name: Contact
-      value: <span style="font-family:'Lucida Console', monospace">maxence.noble-bourillot at polytechnique dot edu</span>
-
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD in Machine Learning
-      institution: CMAP, École Polytechnique, Palaiseau, France
-      year: 2022-now
-      description:
-        - Under the supervision of <a href="https://alain.perso.math.cnrs.fr/">Alain Durmus</a>.
-        - Generative modeling, sampling, Schrödinger Bridge, dynamic optimal transport, stochastic optimal control, diffusion models, Markov Chain Monte Carlo methods.
-        - title: Papers
-          contents:
-            - 1 ICLR workshop paper
-            - 1 ICLR paper
-            - 1 ICML paper
-            - 1 COLT paper
-            - 2 NeuRIPS papers
-            - 3 preprints
-    - title: MRes. in Mathematics, Vision and Learning ("MVA")
-      institution: École Normale Supérieure (ENS), Paris-Saclay, France
-      year: 2021-2022
-      description:
-        - Distinctions with jury’s congratulations.
-        - Generative modeling, Bayesian Machine Learning,
-          Computational statistics, Optimal Transport, Probabilistic Graphical models.
-    - title: MSc. in Applied Mathematics ("Ingénieur Polytechnicien")
-      institution: École Polytechnique, Palaiseau, France
-      year: 2018 - 2021
-      description:
-        - GPA 3.93/4, top 10% of all students.
-        - Statistics, Optimization, Advanced Machine learning, Statistical
-          modeling, Monte Carlo simulations, Stochastic calculus.
+      value: <span style="font-family:'Lucida Console', monospace">maxence.noble at gmail dot com</span>
 
 - title: Experience
   type: time_table
   contents:
+    - title: Postdoctoral Researcher
+      institution: <a href="https://www.cfm.com/">CFM ML Lab</a>, Paris, France
+      year: 2026-now
+      description:
+        - Working with <a href="https://scholar.google.com/citations?user=A5Gx65gAAAAJ&hl=fr&oi=ao">Eric Vanden-Eijnden</a> on fundamental principles and applications of generative models and sampling methods.
     - title: Research Scientist Intern
       institution: <a href="https://www.jasper.ai/">Jasper AI</a>, StationF, Paris, France
       year: 2025
       description:
-        - Affiliated to the Clipdrop team (previously part of Stability AI)
+        - Affiliated to the Clipdrop team (previously part of Stability AI).
         - Worked on fast diffusion-based super-resolution.
-    - title: Research Intern
+    - title: Graduate Research Assistant
       institution: <a href="https://csd.ens.psl.eu/">Center for Data Science</a>, ENS Ulm, Paris, France
       year: 2022
       description:
         - Under the supervision of <a href="https://vdeborto.github.io/">Valentin de Bortoli</a>.
         - Worked on sampling algorithms for constrained spaces with self-concordant barriers.
-    - title: Research Intern
-      institution: CMAP, École Polytechnique, Palaiseau & INRIA Lille, France
+    - title: Graduate Research Assistant
+      institution: <a href="https://cmap.ip-paris.fr/">CMAP</a>, École Polytechnique, Palaiseau & INRIA Lille, France
       year: 2021
       description:
         - Under the supervision of <a href="http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/">Aymeric Dieuleveut</a> and <a href="http://researchers.lille.inria.fr/abellet/">Aurélien Bellet</a>.
@@ -67,6 +40,39 @@
       year: 2020
       description:
         - Worked with the R&D team on improving data completeness in the collection and use of energy consumption invoices (scraping & parsing).
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Machine Learning
+      institution:  <a href="https://cmap.ip-paris.fr/">CMAP</a>, École Polytechnique, Palaiseau, France
+      year: 2026-2026
+      description:
+        - Under the supervision of <a href="https://alain.perso.math.cnrs.fr/">Alain Durmus</a>.
+        - "Sampling and Transport with Score-based Diffusion models : Opportunities and Methodological Advances"
+        - title: 9 papers
+          contents:
+            - 1 COLT paper
+            - 1 ICLR workshop paper
+            - 1 ICLR paper
+            - 1 ICML paper
+            - 2 NeuRIPS papers
+            - 1 TMLR paper
+            - 2 preprints
+    - title: M.Res. in Mathematics, Vision and Learning ("MVA")
+      institution: École Normale Supérieure (ENS), Paris-Saclay, France
+      year: 2021-2022
+      description:
+        - Distinctions with jury’s congratulations.
+        - Generative modeling, Bayesian Machine Learning,
+          Computational statistics, Optimal Transport, Probabilistic Graphical models.
+    - title: M.Sc. in Applied Mathematics ("Ingénieur Polytechnicien")
+      institution: École Polytechnique, Palaiseau, France
+      year: 2018 - 2021
+      description:
+        - GPA 3.93/4, top 10% of all students.
+        - Statistics, Optimization, Advanced Machine learning, Statistical
+          modeling, Monte Carlo simulations, Stochastic calculus.
 
 - title: Honors and Awards
   type: time_table
@@ -81,6 +87,9 @@
 - title: Reviewing
   type: time_table
   contents:
+    - year: 2026
+      description:
+        - NeurIPS, PriGM @NeurIPS, TMLR
     - year: 2025
       description:
         - ICLR, FPI @ICLR, NeurIPS
@@ -100,4 +109,4 @@
 - title: Other Interests
   type: list
   contents:
-    - Crossfit, Hyrox, Swimming, Cooking, Cinema.
+    - Hyrox, Calisthenics, Swimming, Swim-run, Cooking, Cinema.

@@ -16,7 +16,7 @@
 
 "doucet":
   - firstname: ["Arnaud", "Arnaud Doucet"]
-    url: https://www.stats.ox.ac.uk/~doucet/
+    url: https://arnauddoucet.github.io/
 
 "grenioux":
   - firstname: ["Louis", "Louis Grenioux"]
@@ -33,3 +33,11 @@
 "dieuleveut":
   - firstname: ["Aymeric", "Aymeric Dieuleveut"]
     url: http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/
+
+"janati":
+  - firstname: ["Yazid", "Yazid Janati"]
+    url: https://scholar.google.com/citations?user=JGor6XwAAAAJ&hl=fr
+
+"moulines":
+  - firstname: [ "Eric", "Eric Moulines" ]
+    url: https://scholar.google.com/citations?user=_XE1LvQAAAAJ&hl=fr
